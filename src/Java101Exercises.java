@@ -83,7 +83,23 @@ public class Java101Exercises {
      */
     public static double preformIndicatedOperation011(String operation, double op1, double op2) {
         // TODO: Write code here
-        return 0;
+        double result = 0.0;
+        double add = op1 + op2;
+        double sub = op1 - op2;
+        double mul = op1 * op2;
+        double div = op1 / op2;
+
+        if(operation.equalsIgnoreCase("Add")){
+            result = add;
+        } else if (operation.equalsIgnoreCase("Sub")){
+            result = sub;
+        } else if(operation.equalsIgnoreCase("Mul") ){
+            result = mul;
+        } else if (operation.equalsIgnoreCase("Div")){
+            result = div;
+        }
+
+        return result;
     }
 
     /**
